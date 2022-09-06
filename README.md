@@ -10,7 +10,7 @@ https://blog.csdn.net/fittec/article/details/118942425
 1. [基础入门](./markdown/1.md) √
 2. [底层注解](./markdown/2.md) √
 3. [自动配置](./markdown/3.md) √
-4. [开发技巧]()
+4. [开发技巧](./markdown/4.md) √
 5. [配置文件]()
 6. [Web 场景]()
 7. [请求处理]()

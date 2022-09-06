@@ -39,10 +39,24 @@
             <scope>test</scope>
         </dependency>
 
-        <!--   mysql-jdbc 若不指定版本默认用 parent pom 的版本 -->
+        <!--   mysql-jdbc 若不指定版本默认用 parent pom.xml 的版本 -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
+        </dependency>
+
+        <!--    Lombok     -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!--   Dev-tools     -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 

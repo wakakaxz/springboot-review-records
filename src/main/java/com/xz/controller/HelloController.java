@@ -3,6 +3,7 @@ package com.xz.controller;
 import com.xz.entity.Car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -19,7 +20,7 @@ public class HelloController {
         return car;
     }
     @RequestMapping("/hello")
-    public String handle01(){
-        return "Hello World！你好！";
+    public String handle01(@RequestParam("name") String name){
+        return "Hello World！你好！" + name;
     }
 }

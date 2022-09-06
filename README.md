@@ -8,9 +8,9 @@ https://blog.csdn.net/blackcatsmile/article/details/122025443
 https://blog.csdn.net/fittec/article/details/118942425
 ## SpringBoot 文档学习
 1. [基础入门](./markdown/1.md) √
-2. [底层注解](./markdown/2.md) 
-3. [自动配置]()
-4. [最佳实践]()
+2. [底层注解](./markdown/2.md) √
+3. [自动配置](./markdown/3.md) √
+4. [开发技巧]()
 5. [配置文件]()
 6. [Web 场景]()
 7. [请求处理]()

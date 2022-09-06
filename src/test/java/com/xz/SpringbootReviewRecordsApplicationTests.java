@@ -8,7 +8,7 @@ class SpringbootReviewRecordsApplicationTests {
 
     @Test
     void contextLoads() {
-        System.out.println("你好世界");
+        System.out.println("你好世界" + null);
     }
 
 }

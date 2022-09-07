@@ -13,4 +13,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Pet {
     private String name;
+    private Double weight;
 }

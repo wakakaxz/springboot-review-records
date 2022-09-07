@@ -1,28 +1,21 @@
 package com.xz;
 
-import com.xz.config.MyConfigure;
-import com.xz.entity.Pet;
-import com.xz.entity.User;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.SpringBootConfiguration;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-
 /**
  * @author xz
  */
 
-//@SpringBootApplication
-@SpringBootConfiguration
-@EnableAutoConfiguration
-@ComponentScan("com.xz")
+//@SpringBootConfiguration
+//@EnableAutoConfiguration
+//@ComponentScan("com.xz")
+@SpringBootApplication
 public class SpringbootReviewRecordsApplication {
 
     public static void main(String[] args) {
         // 1. 返回我们 IOC 容器
-        ConfigurableApplicationContext run = SpringApplication.run(SpringbootReviewRecordsApplication.class, args);
+//        ConfigurableApplicationContext run = SpringApplication.run(SpringbootReviewRecordsApplication.class, args);
+        SpringApplication.run(SpringbootReviewRecordsApplication.class, args);
 
         // 2. 查看容器里面的组件
 //        String[] names = run.getBeanDefinitionNames();
@@ -35,7 +28,7 @@ public class SpringbootReviewRecordsApplication {
 //        Pet tom2 = run.getBean("tom", Pet.class);
 //        System.out.println(tom1 == tom2);
 
-        MyConfigure bean = run.getBean(MyConfigure.class);
+//        MyConfigure bean = run.getBean(MyConfigure.class);
 //        System.out.println(bean);
 //        User user = bean.user01();
 //        System.out.println(user);

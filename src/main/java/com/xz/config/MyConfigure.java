@@ -30,8 +30,8 @@ public class MyConfigure {
         return new User("张三", 18);
     }
 
-    @Bean("tom")
-    public Pet tomcatPet() {
-        return new Pet("tomcat");
-    }
+//    @Bean("tom")
+//    public Pet tomcatPet() {
+//        return new Pet("tomcat");
+//    }
 }

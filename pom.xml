@@ -66,6 +66,13 @@
             <optional>true</optional>
         </dependency>
 
+        <!--   Webjars Jqu 3.6.1     -->
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>jquery</artifactId>
+            <version>3.6.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>

@@ -12,7 +12,7 @@ https://blog.csdn.net/fittec/article/details/118942425
 3. [自动配置](./markdown/3.md) √
 4. [开发技巧](./markdown/4.md) √
 5. [配置文件](./markdown/5.md) √
-6. [Web 场景]()
+6. [Web 场景](./markdown/6.md) √
 7. [请求处理]()
 8. [响应处理]()
 9. [视图解析]()

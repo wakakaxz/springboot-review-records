@@ -1,37 +1,17 @@
-server.port: 8080
+spring:
+#  mvc:
+#    static-path-pattern: /resources/**
 
-spring.servlet.multipart.max-file-size: 10MB
+  web:
+    resources:
+      static-locations: [classpath:/public, classpath:/static]
+      add-mappings: true       # 静态资源是否生效
+      cache:
+        period: 11000        # 静态资源缓存周期 单位: 秒
 
-mycar:
-  brand: BYD
-  price: 100000
-pe
-person:
-  userName: "张\n三"
-  boss: false
-  birth: 2022/09/07 23:15:33
-  age: 18
-  pet:
-    name: tomcat
-    weight: 23.4
-  interests: [唱, 跳, Rap, 篮球]
-  animal:
-    - jerry
-    - mario
-  score:
-    english:
-      first: 30
-      second: 40
-      third: 50
-    math: [131, 140, 148]
-    chinese: {first: 128, second: 136}
-  salaries: [3999, 4999.98, 5999.99]
-  allPets:
-    sick:
-      - {name: 阿猫}
-      - {name: 杰瑞, weight: 47}
-    health: [{name: mario, weight: 47}]
 
+#server.port: 8080
+#spring.servlet.multipart.max-file-size: 10MB
 
 #debug: true
 

@@ -8,6 +8,13 @@ spring:
 #      add-mappings: true       # 静态资源是否生效
 #      cache:
 #        period: 11000        # 静态资源缓存周期 单位: 秒
+  redis:
+    host: 10.1.1.128
+    database: 0
+    port: 6379
+    password: secret
+    client-type: lettuce
+
   datasource:
     url: jdbc:mysql://10.1.1.128:3306/todos?useSSL=false
     username: root

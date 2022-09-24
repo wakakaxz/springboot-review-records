@@ -24,7 +24,7 @@ https://blog.csdn.net/fittec/article/details/118942425
 15. [嵌入式 Servlet 容器]()
 16. [定制化原理]()
 17. [数据访问 Mybatis](./markdown/17.md) √
-18. [数据访问 Redis](./markdown/18.md)
+18. [数据访问 Redis](./markdown/18.md) √
 19. [单元测试](./markdown/19.md)
 20. [指标监控](./markdown/20.md)
 21. [高级特性]()

@@ -1,0 +1,77 @@
+spring:
+  # redis 规则
+  redis:
+    host: 10.1.1.128
+    database: 0
+    port: 6379
+    password: secret
+    client-type: lettuce
+  # 数据源
+  datasource:
+    url: jdbc:mysql://10.1.1.128:3306/todos?useSSL=false
+    username: root
+    password: secret
+
+    druid:
+      aop-patterns: com.xz.* # 监控 Spring Bean
+      filters: stat, wall   # 开启功能 stat (SQL), wall(防火墙)
+
+      stat-view-servlet:   # 监控页功能
+        enabled: true
+        login-username: admin
+        login-password: admin
+        reset-enable: false   # 重置按钮
+
+      web-stat-filter:    # 监控 web 应用
+        enabled: true
+        url-pattern: /*
+#        exclusions:
+
+      filter:                   # 对上面 filters 详细配置
+        stat:
+          slow-sql-millis: 1000    # 慢查询时间(ms)
+          log-slow-sql: true
+        wall:
+          enabled: false
+          config:
+            delete-allow: false    # 是否允许删除 SQL
+  # 格式化
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+# 配置 mybatis 规则
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml # SQL 映射文件位置
+  configuration:
+    map-underscore-to-camel-case: true
+#  config-location: classpath:mybatis/mybatis-config.xml
+
+#  mvc:
+#    static-path-pattern: /resources/**
+#
+#  web:
+#    resources:
+#      static-locations: [classpath:/public, classpath:/static]
+#      add-mappings: true       # 静态资源是否生效
+#      cache:
+#        period: 11000        # 静态资源缓存周期 单位: 秒
+
+  #    type: com.zaxxer.hikari.HikariDataSource
+
+#    driver-class-name: com.mysql.jdbc.Driver
+
+#  jdbc:
+#    template:
+#      query-timeout: 3    # 查询超时
+
+#server.port: 8080
+#spring.servlet.multipart.max-file-size: 10MB
+
+#debug: true
+
+#logging:
+#  pattern:
+#    console: "%green([%-5p]) %boldYellow([%45logger]) - %magenta(%m) %n"
+#  level:
+
+#    实体: TRACE
